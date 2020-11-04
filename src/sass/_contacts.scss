@@ -1,0 +1,94 @@
+.contacts {
+    padding: 100px 0;
+    text-align: center;
+    .contacts__header {
+        margin-bottom: 75px;
+        h2 {
+            @include tipical
+        }
+    }
+    
+    .contacts__body {
+        display: flex;
+        justify-content: space-between;
+        .address-box {
+            margin-bottom: 37px;
+            text-align: left;
+            .address {
+                width: 40%;
+            }
+            h4 {
+                color: #555555;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 17px;
+                i {
+                    margin-right: 20px;
+                }
+            }
+            p {
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+        .form {
+            width: 60%;
+            text-align: left;
+            .for-data {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+                input  {
+                    width: 48%;
+                    height: 44px;
+                    outline: none;
+                    border: 1px solid #555555;
+                    padding-left: 10px;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                    &:hover {
+                        border: 1px solid #c0301c;
+                        cursor: pointer;
+                    }
+                }
+                textarea {
+                    width: 100%;
+                    height: 104px;
+                    border: 1px solid #555555;
+                    outline: none;
+                    padding-left: 10px;
+                    text-transform: uppercase;
+                    &:hover {
+                        border: 1px solid #c0301c;
+                        cursor: pointer;
+                    }
+                }
+            }
+            button {
+                width: 170px;
+                height: 44px;
+                border: 1px solid #555555;
+                outline: none;
+                padding-left: 10px;
+                text-transform: uppercase;
+                background-color: transparent;
+                margin-right: 40px;
+                &:hover {
+                    border: 1px solid #c0301c;
+                    cursor: pointer;
+                }
+            }
+            span  { 
+                font-size: 12px;
+                line-height: 20px;
+                span {
+                    color: #c0301c;
+                }
+            }
+        }
+    }
+}

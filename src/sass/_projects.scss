@@ -1,0 +1,108 @@
+.projects__header {
+    background: url("/images/project.jpg") no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Roboto Slab";
+    line-height: 44px;
+    font-weight: 400;
+    P {
+        font-size: 30px;
+        span {
+            text-transform: uppercase;
+        }
+    }
+    button {
+        margin-top: 53px;
+        width: 180px;
+        height: 50px;
+        border-radius: 2px;
+        border: 2px solid #ffffff;
+        background-color: transparent;
+        outline: none;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #ffffff;
+        &:hover {
+            background: rgba(255, 255, 255, 0.521);
+        }
+    }
+}
+.projects__content {
+    padding: 100px 0;
+    text-align: center;
+    h2 {
+        @include tipical;
+    }
+    p {
+        margin-bottom: 30px;
+    }
+    .projects-box.cont {
+        padding-bottom: 40px;
+        border-bottom: 2px solid  #dddddd;
+    }
+    .projects-box {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+        .for-img {
+            width: 40%;
+            display: flex;
+            align-items: center;
+            img {
+                width: 100%;
+            }
+        }
+        .text {
+            width: 50%;
+            text-align: left;
+            .text-header {
+                display: flex;
+                align-items: center;
+                margin-bottom: 23px;
+                .about {
+                    margin-left: 20px;
+                    p {
+                        margin: 0;
+                        color: #c0301c;
+                    }
+                    p.no-color {
+                        color: #777777;
+                    }
+                    p:first-child {
+                        font-family: Montserrat;
+                        font-size: 16px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                    }
+                    p:nth-child(2) {
+                        color: #777777;
+                        font-family: "Roboto Slab";
+                        font-size: 13px;
+                        font-weight: 400;
+                        font-style: italic;
+                        span {
+                            color: #c0301c;
+                        }
+                    }
+                }
+            }
+            .text-footer {
+                a.btn {
+                    outline: none;
+                    border: none;
+                    color: #c0301c;
+                    font-family: "Roboto Slab";
+                    font-size: 13px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+                a.btn.no-color{
+                    color: #777777;
+                }
+            }
+
+        }
+    }
+}

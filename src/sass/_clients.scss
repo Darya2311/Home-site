@@ -1,0 +1,28 @@
+.clients {
+    padding: 114px 0 100px 0;
+    background-color: #f8f8f8;
+    .clients-logo {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 85px;
+    }
+    p {
+        margin: 0 auto;
+        width: 75%;
+        color: #555555;
+        font-family: "Roboto Slab";
+        font-size: 18px;
+        font-weight: 400;
+        font-style: italic;
+        letter-spacing: normal;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .author {
+        font-size: 20px;
+    }
+    .line {
+        background-color: #c0301c;
+    }
+}
