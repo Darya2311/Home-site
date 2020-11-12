@@ -95,6 +95,7 @@
     }
     .gallery-box:hover {
         .upper-lay {
+            cursor: pointer;
             display: block;
             display: flex;
             flex-direction: column;

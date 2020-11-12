@@ -1,17 +1,30 @@
-@media (max-width:720px) {
+@media (max-width: 992px) {
     .header.media {
         padding: 20 0 50px 0;
         .navigation {
             width: 100%;
-            height: unset;
-            flex-direction: column;
+            min-height: 100px;
             padding-left: 20px;
             margin-bottom: 60px;
             .navigation-links {
-                display: flex;
-                flex-wrap: wrap;
-                margin-right: 0px;
-                padding: 5px 0;
+                position: relative;
+                button.navbar-toggler {
+                    border-color: #fff;
+                    position: absolute;
+                    touch-action: 50px;
+                    right: 50px;
+                }
+                .navbar-collapse.collapse.show {
+                    width: 200px;
+                    height: 100px;
+                    text-align: center;
+                    .navbar-nav {
+                        position: absolute;
+                        top: 0px;
+                        right: 150px;
+                        background-color: #661910af;
+                    }
+                }
             }
         }
         .header__content {
@@ -94,7 +107,7 @@
                 flex-wrap: wrap;
                 justify-content: space-between;
             }
-            .form {
+            form {
                 width: 95%;
                 text-align: center;
                 button{

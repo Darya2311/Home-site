@@ -13,13 +13,18 @@ html(lang="en")
                 .navigation
                     .navigation-logo Startup
                     .navigation-links
-                        a(href="#") Home
-                        a(href="#") Services  
-                        a(href="#") About  
-                        a(href="#") Works 
-                        a(href="#") Blog 
-                        a(href="#") Clients 
-                        a(href="#") Contact
+                        nav.navbar.navbar-expand-lg.navbar-light
+                            button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
+                                span.navbar-toggler-icon
+                            #navbarNavAltMarkup.collapse.navbar-collapse
+                                .navbar-nav
+                                    a.nav-item.nav-link(href='#') Home
+                                    a.nav-item.nav-link(href='#') Services
+                                    a.nav-item.nav-link(href='#') About  
+                                    a.nav-item.nav-link(href='#') Works 
+                                    a.nav-item.nav-link(href='#') Blog
+                                    a.nav-item.nav-link(href='#') Clients
+                                    a.nav-item.nav-link(href='#') Contact
                 .header__content
                     h2 Welcome to Startup
                     p Your Favourite Creative Agency Template
@@ -221,9 +226,9 @@ html(lang="en")
                                     |At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem 
                                     |ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam 
                             .text-footer
-                                a.btn.no-color(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+                                a.btn.no-color(data-toggle='collapse' href='#collapseExample-2' role='button' aria-expanded='false' aria-controls='collapseExample')
                                     | Read more
-                                #collapseExample.collapse
+                                #collapseExample-2.collapse
                                     .card.card-body
                                         | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
 
@@ -270,7 +275,7 @@ html(lang="en")
                                 span E-mail
                             p shapedtheme@gmail.com
                             p khalilkode@gmail.com
-                    .form
+                    form
                         .for-data
                             input(type="text" placeholder="Your name")
                             input(type="text" placeholder="Your E-mail")

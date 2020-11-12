@@ -22,20 +22,30 @@ p, h1, h2, h3, h4, h5, h6 {
   max-width: 1110px;
   margin: 0 auto; }
 
-@media (max-width: 720px) {
+@media (max-width: 992px) {
   .header.media {
     padding: 20 0 50px 0; }
     .header.media .navigation {
       width: 100%;
-      height: unset;
-      flex-direction: column;
+      min-height: 100px;
       padding-left: 20px;
       margin-bottom: 60px; }
       .header.media .navigation .navigation-links {
-        display: flex;
-        flex-wrap: wrap;
-        margin-right: 0px;
-        padding: 5px 0; }
+        position: relative; }
+        .header.media .navigation .navigation-links button.navbar-toggler {
+          border-color: #fff;
+          position: absolute;
+          touch-action: 50px;
+          right: 50px; }
+        .header.media .navigation .navigation-links .navbar-collapse.collapse.show {
+          width: 200px;
+          height: 100px;
+          text-align: center; }
+          .header.media .navigation .navigation-links .navbar-collapse.collapse.show .navbar-nav {
+            position: absolute;
+            top: 0px;
+            right: 150px;
+            background-color: #661910af; }
     .header.media .header__content h2 {
       font-size: 18px;
       margin-bottom: 20px; }
@@ -86,16 +96,16 @@ p, h1, h2, h3, h4, h5, h6 {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between; }
-      .contacts.media .contacts__body .form {
+      .contacts.media .contacts__body form {
         width: 95%;
         text-align: center; }
-        .contacts.media .contacts__body .form button {
+        .contacts.media .contacts__body form button {
           width: 100%;
           margin-bottom: 10px; } }
 
 .header {
   padding: 0 0 260px 0;
-  background: url("/images/home.jpg") no-repeat;
+  background: url("../images/home.jpg") no-repeat;
   background-size: cover; }
   .header .navigation {
     height: 100px;
@@ -108,22 +118,25 @@ p, h1, h2, h3, h4, h5, h6 {
     .header .navigation .navigation-logo {
       font-size: 24px;
       font-weight: 700; }
-    .header .navigation .navigation-links a {
-      color: #ffffff;
-      margin-right: 20px;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 24px;
-      letter-spacing: 0.35px;
-      padding: 10px 5;
-      border-bottom: 2px solid transparent; }
-    .header .navigation .navigation-links a:last-child {
-      margin-right: 0px; }
-    .header .navigation .navigation-links a:hover {
-      cursor: pointer;
-      border-bottom: 2px solid #fff;
-      background-color: rgba(255, 255, 255, 0.384); }
+    .header .navigation .navigation-links {
+      display: flex;
+      justify-content: space-between; }
+      .header .navigation .navigation-links a {
+        color: #ffffff;
+        margin-right: 20px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.35px;
+        padding: 10px 5;
+        border-bottom: 2px solid transparent; }
+      .header .navigation .navigation-links a:last-child {
+        margin-right: 0px; }
+      .header .navigation .navigation-links a:hover {
+        cursor: pointer;
+        border-bottom: 2px solid #fff;
+        background-color: rgba(255, 255, 255, 0.384); }
   .header .header__content {
     color: #ffffff;
     font-family: "Roboto Slab";
@@ -229,21 +242,23 @@ p, h1, h2, h3, h4, h5, h6 {
       position: relative; }
       .about-us .about-us__content .team:hover .upper-lay {
         cursor: pointer;
-        display: none; }
+        display: flex;
+        justify-content: center;
+        align-items: flex-end; }
     .about-us .about-us__content .team.first {
-      background: url("/images/Team1.jpg") no-repeat;
+      background: url("../images/Team1.jpg") no-repeat;
       background-size: cover;
       background-position: center center; }
     .about-us .about-us__content .team.second {
-      background: url("/images/Team2.jpg") no-repeat;
+      background: url("../images/Team2.jpg") no-repeat;
       background-size: cover;
       background-position: center center; }
     .about-us .about-us__content .team.third {
-      background: url("/images/Team3.png") no-repeat;
+      background: url("../images/Team3.png") no-repeat;
       background-size: cover;
       background-position: center center; }
     .about-us .about-us__content .team.fourth {
-      background: url("/images/Team4.jpg") no-repeat;
+      background: url("../images/Team4.jpg") no-repeat;
       background-size: cover;
       background-position: center center; }
     .about-us .about-us__content .upper-lay {
@@ -253,9 +268,7 @@ p, h1, h2, h3, h4, h5, h6 {
       width: 100%;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.589);
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
+      display: none;
       padding-bottom: 40px; }
       .about-us .about-us__content .upper-lay .for-icon {
         width: 28px;
@@ -348,6 +361,7 @@ p, h1, h2, h3, h4, h5, h6 {
       grid-column: 3/4;
       grid-row: 3/4; }
   .works .gallery-box:hover .upper-lay {
+    cursor: pointer;
     display: block;
     display: flex;
     flex-direction: column;
@@ -355,7 +369,7 @@ p, h1, h2, h3, h4, h5, h6 {
     align-items: center; }
 
 .projects__header {
-  background: url("/images/project.jpg") no-repeat;
+  background: url("../images/project.jpg") no-repeat;
   background-size: cover;
   padding: 100px 0;
   text-align: center;
@@ -498,16 +512,16 @@ p, h1, h2, h3, h4, h5, h6 {
       .contacts .contacts__body .address-box p {
         font-size: 12px;
         line-height: 20px; }
-    .contacts .contacts__body .form {
+    .contacts .contacts__body form {
       width: 60%;
       text-align: left; }
-      .contacts .contacts__body .form .for-data {
+      .contacts .contacts__body form .for-data {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 20px; }
-        .contacts .contacts__body .form .for-data input {
+        .contacts .contacts__body form .for-data input {
           width: 48%;
           height: 44px;
           outline: none;
@@ -515,20 +529,20 @@ p, h1, h2, h3, h4, h5, h6 {
           padding-left: 10px;
           text-transform: uppercase;
           margin-bottom: 20px; }
-          .contacts .contacts__body .form .for-data input:hover {
+          .contacts .contacts__body form .for-data input:hover {
             border: 1px solid #c0301c;
             cursor: pointer; }
-        .contacts .contacts__body .form .for-data textarea {
+        .contacts .contacts__body form .for-data textarea {
           width: 100%;
           height: 104px;
           border: 1px solid #555555;
           outline: none;
           padding-left: 10px;
           text-transform: uppercase; }
-          .contacts .contacts__body .form .for-data textarea:hover {
+          .contacts .contacts__body form .for-data textarea:hover {
             border: 1px solid #c0301c;
             cursor: pointer; }
-      .contacts .contacts__body .form button {
+      .contacts .contacts__body form button {
         width: 170px;
         height: 44px;
         border: 1px solid #555555;
@@ -537,13 +551,13 @@ p, h1, h2, h3, h4, h5, h6 {
         text-transform: uppercase;
         background-color: transparent;
         margin-right: 40px; }
-        .contacts .contacts__body .form button:hover {
+        .contacts .contacts__body form button:hover {
           border: 1px solid #c0301c;
           cursor: pointer; }
-      .contacts .contacts__body .form span {
+      .contacts .contacts__body form span {
         font-size: 12px;
         line-height: 20px; }
-        .contacts .contacts__body .form span span {
+        .contacts .contacts__body form span span {
           color: #c0301c; }
 
 .footer {
